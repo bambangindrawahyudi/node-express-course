@@ -11,3 +11,11 @@ aplikasi . get ( ' / users ' , function ( req , res ) {
  	 	pengguna : mockUserData
  	})
 })
+aplikasi . get ( ' / users /: id ' , function ( req , res ) {
+	 console . log ( req . params . id )
+	 res . json ({
+		sukses :  benar ,
+		pesan :  ' dapatkan satu pengguna ' ,
+		pengguna :  req . params . Indo
+	})
+})
